@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "osop-crewai"
+version = "0.1.0"
+description = "Run CrewAI crews from OSOP workflow definitions — define once in YAML, execute anywhere."
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.11"
+authors = [{ name = "OSOP Contributors", email = "hello@osop.ai" }]
+keywords = ["crewai", "osop", "workflow", "ai-agents", "multi-agent"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "crewai>=0.60",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://osop.ai"
+Repository = "https://github.com/Archie0125/osop-crewai"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "ruff>=0.4"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
