@@ -94,7 +94,7 @@ edges:
 
 - [OSOP Spec](https://github.com/Archie0125/osop-spec) — Protocol specification
 - [OSOP Interop](https://github.com/Archie0125/osop-interop) — Format converters
-- [OSOP MCP Server](https://github.com/Archie0125/osop-mcp) — 12 MCP tools
+- [OSOP MCP Server](https://github.com/Archie0125/osop-mcp) — 5 MCP tools (validate, render, report, diff, risk_assess)
 - [Visual Editor](https://osop-editor.vercel.app)
 
 ## License
